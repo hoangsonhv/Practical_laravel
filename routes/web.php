@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("/apartments",[ApartmentController::class,"list"]);
+Route::get('/apartments',[ApartmentController::class,"listApartment"]);

@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class ApartmentController extends Controller
 {
-    public function list(){
-        $apartments = Apartment::all()->paginate(6);
-        return view("page.list_apartment",[
+    public function listApartment(){
+        $apartments = Apartment::paginate(6);
+        return view("pages.list_apartment",[
             "apartments"=>$apartments
         ]);
     }

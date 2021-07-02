@@ -1,1 +1,1 @@
-<?php
+layout
