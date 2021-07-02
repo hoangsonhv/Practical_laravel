@@ -6,6 +6,7 @@ use App\Models\Apartment;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -17,7 +18,7 @@ class DatabaseSeeder extends Seeder
     {
 //         \App\Models\User::factory(10)->create();
         $this->call([
-           Apartment::class
+           ApartmentSeeder::class,
         ]);
     }
 }

@@ -9,7 +9,7 @@ class ApartmentController extends Controller
 {
     public function list(){
         $apartments = Apartment::all()->paginate(6);
-        return view("list_apartment",[
+        return view("page.list_apartment",[
             "apartments"=>$apartments
         ]);
     }
